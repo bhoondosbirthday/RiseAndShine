@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: sans-serif;
+}
+
+.loaderBackground1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1002;
+    background: #5b196b;
+}
+
+.loaderBackground2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1003;
+    /* background: url(files/sun.png) 50% 50% no-repeat; */
+    /* background-size: 40vw; */
+    /* animation: sunRotate 10s linear  infinite,loaderUp 1s ease-in-out 5.5s forwards  ; */
+}
+
+
+
+.loaderBackgroundAnimation1 {
+    animation: loaderUp 1s ease-in-out forwards;
+}
+
+@keyframes loaderUp {
+    0% {
+        top: 0;
+
+    }
+
+    100% {
+        top: -150vh;
+    }
+}
+
+
+.mainSection{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw;
+}
+
+
+
+.owlImage{
+    width: 30%;
+    /* animation: sunRotate 10s linear  infinite  ; */
+}
+
+.captionDiv{
+    width: 40%;
+    display: none;
+}
+
+.caption{
+    color: orange;
+    font-size: 5rem;
+    text-align: center;
+}
+
+@keyframes sunRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.image{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    width: 40vw;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px pink;
+    display: none;
+}
+
+.subtitle{
+    position: absolute;
+    font-size: 4.5rem;
+    width: 100vw;
+    text-align: center;
+    bottom: 7%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    animation: colorChange 4s ease  infinite  ;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ffbcbc;
+    }
+
+    10% {
+        color: #ffbce8;
+    }
+
+    20% {
+        color: #e2bcff;
+    }
+
+    30% {
+        color: #bcc1ff;
+    }
+
+    40% {
+        color: #bcfcff;
+    }
+
+    50% {
+        color: #bcffc7;
+    }
+
+    60% {
+        color: #d6ffbc;
+    }
+
+    60% {
+        color: #feffbc;
+    }
+
+    70% {
+        color: #ffedbc;
+    }
+
+    80% {
+        color: #ffd5bc;
+    }
+
+    90% {
+        color: #ffbcbc;
+    }
+
+    100% {
+        color: #ffbcbc;
+    }
+
+}
+
+.redLabel{
+    color: crimson;
+}
