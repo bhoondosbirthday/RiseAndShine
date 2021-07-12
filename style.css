@@ -8,6 +8,58 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: sans-serif;
+    animation: bgcolorChange 4s ease  infinite  ;
+}
+
+@keyframes bgcolorChange {
+    0% {
+        background-color: #ffbcbc;
+    }
+
+    10% {
+        background-color: #ffbce8;
+    }
+
+    20% {
+        background-color: #e2bcff;
+    }
+
+    30% {
+        background-color: #bcc1ff;
+    }
+
+    40% {
+        background-color: #bcfcff;
+    }
+
+    50% {
+        background-color: #bcffc7;
+    }
+
+    60% {
+        background-color: #d6ffbc;
+    }
+
+    60% {
+        background-color: #feffbc;
+    }
+
+    70% {
+        background-color: #ffedbc;
+    }
+
+    80% {
+        background-color: #ffd5bc;
+    }
+
+    90% {
+        background-color: #ffbcbc;
+    }
+
+    100% {
+        background-color: #ffbcbc;
+    }
+
 }
 
 .loaderBackground1 {
@@ -18,6 +70,7 @@ body {
     height: 100%;
     z-index: 1002;
     background: #5b196b;
+    /* display:none; */
 }
 
 .loaderBackground2{
@@ -31,7 +84,26 @@ body {
     /* background-size: 40vw; */
     /* animation: sunRotate 10s linear  infinite,loaderUp 1s ease-in-out 5.5s forwards  ; */
 }
+.loaderbackground3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1004;
+    background: #5b196b;
+    display:none;
+}
 
+.loaderbackground3 h1{
+    margin: 10px;
+    color: white;
+    font-size: 4rem;
+}
 
 
 .loaderBackgroundAnimation1 {

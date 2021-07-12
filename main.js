@@ -125,7 +125,7 @@ setTimeout(() => {
 var audio = $("#damonAudio")[0];
 var count = 0;
 $(".owlImage").mouseenter(function () {
-  if(count<5){
+  if(count<3){
   audio.load();
   audio.play();} count++;
 });
@@ -276,7 +276,10 @@ $(function () { // you can wrap it here with in document ready block
         $(".caption1Div").css("display", "NONE");
         $(".caption2Div").css("display", "BLOCK");
         break;
-
+      case 29:
+        $(".caption1Div").css("display", "NONE");
+        $(".caption2Div").css("display", "NONE");
+        $(".loaderbackground3").css("display", "flex");
       default:
         break;
     }
